@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-:root {
---Red: hsl(0, 78%, 62%);
---Cyan: hsl(180, 62%, 55%);
---Orange: hsl(34, 97%, 64%);
---Blue: hsl(212, 86%, 64%);
 
---Grey_500: hsl(234, 12%, 34%);
---Grey_400: hsl(212, 6%, 44%);
---White: hsl(0, 0%, 100%);
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Grey_500: hsl(234, 12%, 34%);
+    --Grey_400: hsl(212, 6%, 44%);
+    --White: hsl(0, 0%, 100%);
 }
 
 body {
@@ -16,45 +17,72 @@ body {
 }
 
 .hero {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
 .hero h1 {
-
+    color: var(--Grey_400);
+    font-weight: 200;
+    font-size: 25px;
 }
+
 .hero .sub-title {
-
+    color: var(--Grey_500);
+    font-weight: 500;
 }
-.hero p {
 
+.hero p {
+    color: var(--Grey_500);
+    font-weight: 400;
+    font-size: 18px;
 }
 
 /* cards */
 
 .cards {
-
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .card {
-
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px 20px 40px 20px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
 }
+
 .card h3 {
-
+    color: var(--Grey_500);
 }
+
 .card p {
-
+    color: var(--Grey_400);
 }
-.card .supervisor {
 
+.card img {
+    align-self: flex-end;
 }
-.card .team-builder {
 
+.cards .supervisor {
+    border-top: 4px solid var(--Cyan);
 }
-.card .karma {
 
+.cards .team-builder {
+    border-top: 4px solid var(--Red);
 }
-.card .calculator {
 
+.cards .karma {
+    border-top: 4px solid var(--Orange);
+}
+
+.cards .calculator {
+    border-top: 4px solid var(--Blue);
 }
