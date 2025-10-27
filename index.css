@@ -22,8 +22,39 @@ justify-content: center;
 align-items: center;
 }
 .hero h1 {
-    
+
+}
+.hero .sub-title {
+
 }
 .hero p {
+
+}
+
+/* cards */
+
+.cards {
+
+}
+
+.card {
+
+}
+.card h3 {
+
+}
+.card p {
+
+}
+.card .supervisor {
+
+}
+.card .team-builder {
+
+}
+.card .karma {
+
+}
+.card .calculator {
 
 }
