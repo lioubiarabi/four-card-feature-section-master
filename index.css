@@ -28,6 +28,7 @@ body {
     color: var(--Grey_400);
     font-weight: 200;
     font-size: 25px;
+    margin-bottom: 0;
 }
 
 .hero .sub-title {
@@ -39,6 +40,7 @@ body {
     color: var(--Grey_500);
     font-weight: 400;
     font-size: 18px;
+    max-width: 600px;
 }
 
 /* cards */
@@ -54,17 +56,21 @@ body {
 .card {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    max-width: 300px;
     padding: 20px 20px 40px 20px;
     box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
 }
 
 .card h3 {
     color: var(--Grey_500);
+    font-size: 20px;
+    margin: 0;
 }
 
 .card p {
     color: var(--Grey_400);
+    font-weight: 400;
+    margin-bottom: 40px;
 }
 
 .card img {
@@ -85,4 +91,18 @@ body {
 
 .cards .calculator {
     border-top: 4px solid var(--Blue);
+}
+
+@media (min-width:375px) {
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .cards {
+        display: flex;
+    }
+    .card {
+        width: 300px;
+    }
+
 }
